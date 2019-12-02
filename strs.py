@@ -6,16 +6,20 @@
 print("'str' in str") # 'str' in str
 print('"str" in str') # "str" in str
 print('''"str" in str''') # "str" in str
+
 # function print has several default atributes print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # sep is separator beatween objects, by default is
 d = "world with sep=0"
 print("hello", d, sep="0") # hello0world with sep=0
 print("hello world with sep=0", sep='0') # hello world with sep=0
+
 # ather is end, in the end of str + \n
 print('Line break normal') # Line break normal
 print('Line break = double', end='\n'*2) # Line break = double
+
 #
 print('Line break = "USA"', end='USA') # Line break = "USA"USA
+
 # some game with print()
 print('hello', 'world', 'my', 'friend', sep=' ')
 print('hello', 'world', 'my', 'friend', sep='T')
@@ -58,8 +62,6 @@ a = '%s'%'Hello'
 print(a)
 print('Hello %s big %s'%('my', 'world'))
 print('Hello %d big %s'%(7, 'world'))
-
-
 
 spaces=20
 stars = ''

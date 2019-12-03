@@ -3,11 +3,11 @@
 # 1. 'str' in single quote
 # 2. "str" in double quote
 # 3. "'str' in str" or '"str" in str' or '''"str" in str'''to use some quote in str use ather quote
+"""
 print('\n','############ str in str ###########') 
 print("'str' in str") # 'str' in str
 print('"str" in str') # "str" in str
 print('''"str" in str''') # "str" in str
-
 
 # function print has several default atributes print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # sep is separator beatween objects, by default is
@@ -26,7 +26,6 @@ print("say", d1,d2,d3,d4,d5,d6, sep='+++') # hello world with sep=0
 print("say", d1,d2,d3,d4,d5,d6, sep='') # hello world with sep=0
 print("say", d1,d2,d3,d4,d5,d6, sep='      дичь подана       ') # hello world with sep=0
 
-
 #code for disabling the softspace feature 
 print('G','F','G', sep='') 
   
@@ -40,7 +39,8 @@ print('pratik','geeksforgeeks', sep='@')
 # ather is end, in the end of str + \n
 print('\n',"############ Line break normal ###########") 
 print('Line break normal') # Line break normal
-print('Line break = double', end='\n'*2) # Line break = double
+print('Line break = double', end='ee#@!'+'\n'+'234566№;%'*3) # Line break = double
+print('Line break normal') # Line break normal
 
 #
 print('\n',"############ Line break = "'USA'" USA ###########") 
@@ -52,17 +52,39 @@ print('hello', 'world', 'my', 'friend', sep=' ')
 print('hello', 'world', 'my', 'friend', sep='T')
 print('hello'+'world'+'my'+'friend', sep='T')
 
-a = 'helo'
-b = 'world'
+a = '_hello A_'
+b = '_world B_'
+c = '_C_'
+d = '_D_'
+e = '_E_'
+f = '_F_'
 
-print(a, b) # print two values
-print(a+b) # add two str
-print(a or b) # show only value True
-print(a and b) # show you list item if before were True
-print(a*2)
-print(a[1:-1]) # slice
+
+print('\n',"############ PRINT VAR  ###########") 
+print(a,b,c,d,e,f) # print two values
+print(a+b+c+d+e+f) # add two str
+print(a or b or c or d or e or f) # show only value True
+print(a and ((b and c) and (d and e) and f)) # show you list item if before were True
+print(a*5)
+"""
+
+a = '_hello A_'
+b = '_world B_'
+
+print('\n',"############ slice  ###########") 
+print(a[1:-1],'1:-1') # slice
+print(a[0:-1],'0:-1') # slice
+print(a[-1:9],'-1:9') # slice
+print(a[0:1009], '0:1009') # slice
+print(a[-2:-2],'-2:-2') # slice
+print(a[-0:0],'-0:0') # slice
+print(a[3:-3],'3:-3') # slice
+print(a[1:-6],'1:-8') # slice
+
 print(1+6) # any number expression
 
+"""
+print('\n',"############ PRINT FUNCTION  ###########") 
 def hello():
     return 'hello'
 print(hello())# you can put funktion in print or any ather object which has return str value, now will print hello
@@ -102,3 +124,4 @@ stars = ''
 for i in range(0,10,2):
     print('|{text:^{display_width}}|'.format(text=stars, display_width=spaces))
 stars = str(i*'*')
+"""

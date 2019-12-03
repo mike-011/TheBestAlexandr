@@ -8,6 +8,7 @@ print('\n','############ str in str ###########')
 print("'str' in str") # 'str' in str
 print('"str" in str') # "str" in str
 print('''"str" in str''') # "str" in str
+"""
 
 # function print has several default atributes print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # sep is separator beatween objects, by default is
@@ -39,8 +40,9 @@ print('pratik','geeksforgeeks', sep='@')
 # ather is end, in the end of str + \n
 print('\n',"############ Line break normal ###########") 
 print('Line break normal') # Line break normal
-print('Line break = double', end='ee#@!'+'\n'+'234566№;%'*3) # Line break = double
-print('Line break normal') # Line break normal
+print('Line break = double', end='ee#@!\n2019'*3) # Line break = double
+print('Line with ') # Line break normal
+print('09','12', sep='-', end='-2016\n') 
 
 #
 print('\n',"############ Line break = "'USA'" USA ###########") 
@@ -66,7 +68,6 @@ print(a+b+c+d+e+f) # add two str
 print(a or b or c or d or e or f) # show only value True
 print(a and ((b and c) and (d and e) and f)) # show you list item if before were True
 print(a*5)
-"""
 
 a = '_hello A_'
 b = '_world B_'

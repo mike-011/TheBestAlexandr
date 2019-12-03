@@ -42,6 +42,8 @@ print('\n',"############ Line break normal ###########")
 print('Line break normal') # Line break normal
 print('Line break = double', end='ee#@!\n2019'*3) # Line break = double
 print('Line with ') # Line break normal
+
+# https://www.geeksforgeeks.org/python-sep-parameter-print/
 print('09','12', sep='-', end='-2016\n') 
 
 #

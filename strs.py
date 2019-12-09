@@ -8,7 +8,7 @@ print('\n','############ str in str ###########')
 print("'str' in str") # 'str' in str
 print('"str" in str') # "str" in str
 print('''"str" in str''') # "str" in str
-"""
+
 
 # function print has several default atributes print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # sep is separator beatween objects, by default is
@@ -36,7 +36,6 @@ print('09','12','2016', sep='-')
 #another example 
 print('pratik','geeksforgeeks', sep='@') 
 
-
 # ather is end, in the end of str + \n
 print('\n',"############ Line break normal ###########") 
 print('Line break normal') # Line break normal
@@ -54,7 +53,7 @@ print('Line break = "USA"', end='USA') # Line break = "USA"USA
 print('\n',"############ some game with print() ###########") 
 print('hello', 'world', 'my', 'friend', sep=' ')
 print('hello', 'world', 'my', 'friend', sep='T')
-print('hello'+'world'+'my'+'friend', sep='T')
+print('hello'+'world','my'+'friend','rr', sep='T')
 
 a = '_hello A_'
 b = '_world B_'
@@ -63,13 +62,13 @@ d = '_D_'
 e = '_E_'
 f = '_F_'
 
-
 print('\n',"############ PRINT VAR  ###########") 
 print(a,b,c,d,e,f) # print two values
 print(a+b+c+d+e+f) # add two str
 print(a or b or c or d or e or f) # show only value True
 print(a and ((b and c) and (d and e) and f)) # show you list item if before were True
 print(a*5)
+
 
 a = '_hello A_'
 b = '_world B_'
@@ -86,18 +85,27 @@ print(a[1:-6],'1:-8') # slice
 
 print(1+6) # any number expression
 
-"""
+
 print('\n',"############ PRINT FUNCTION  ###########") 
 def hello():
     return 'hello'
+
 print(hello())# you can put funktion in print or any ather object which has return str value, now will print hello
+
+def pause():
+    wait = input("PRESS ENTER TO CONTINUE.")
+    
 
 def world():
     text='world'
     print(text) # None
-    print(world()) # None
+
+print(world()) # None <-- RECURSION <--
+"""
 
 
+
+print('\n',"############ FORMAT  ###########") 
 # format
 a = '{}'.format('str')
 
@@ -127,4 +135,3 @@ stars = ''
 for i in range(0,10,2):
     print('|{text:^{display_width}}|'.format(text=stars, display_width=spaces))
 stars = str(i*'*')
-"""

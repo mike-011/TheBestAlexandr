@@ -5,8 +5,8 @@
 # 3. "'str' in str" or '"str" in str' or '''"str" in str'''to use some quote in str use ather quote
 """
 print('\n','############ str in str ###########') 
-print("'str' in str") # 'str' in str
-print('"str" in str') # "str" in str
+print("'str' in str")     # 'str' in str
+print('"str" in str')     # "str" in str
 print('''"str" in str''') # "str" in str
 
 
@@ -74,14 +74,14 @@ a = '_hello A_'
 b = '_world B_'
 
 print('\n',"############ slice  ###########") 
-print(a[1:-1],'1:-1') # slice
-print(a[0:-1],'0:-1') # slice
-print(a[-1:9],'-1:9') # slice
-print(a[0:1009], '0:1009') # slice
-print(a[-2:-2],'-2:-2') # slice
-print(a[-0:0],'-0:0') # slice
-print(a[3:-3],'3:-3') # slice
-print(a[1:-6],'1:-8') # slice
+print(a[1:-1],'1:-1')       # slice
+print(a[0:-1],'0:-1')       # slice
+print(a[-1:9],'-1:9')       # slice
+print(a[0:1009], '0:1009')  # slice
+print(a[-2:-2],'-2:-2')     # slice
+print(a[-0:0],'-0:0')       # slice
+print(a[3:-3],'3:-3')       # slice
+print(a[1:-6],'1:-8')       # slice
 
 print(1+6) # any number expression
 
@@ -99,10 +99,15 @@ def pause():
 def world():
     text='world'
     print(text) # None
+<<<<<<< HEAD
 
 print(world()) # None <-- RECURSION <--
 """
 
+=======
+    
+print(world()) # None
+>>>>>>> b302de1a38b6dc8bf193b814d5cc4ee2f9ef4617
 
 
 print('\n',"############ FORMAT  ###########") 
@@ -136,4 +141,8 @@ stars = ''
 
 for i in range(0,10,2):
     print('|{text:^{display_width}}|'.format(text=stars, display_width=spaces))
+<<<<<<< HEAD
 stars = str(i*'*')
+=======
+    stars = str(i*'*')
+>>>>>>> b302de1a38b6dc8bf193b814d5cc4ee2f9ef4617

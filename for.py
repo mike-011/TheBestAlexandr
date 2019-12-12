@@ -6,6 +6,7 @@ for i in text:
 for e,m in enumerate(text): # первая е для цифр функции enumerate() второе m для значения данных из  text
     print(e, m, sep=' - ') # tab
 
+
 # same without enumerate()
 e = 0
 for m in text:
@@ -22,9 +23,10 @@ for l in text:
 used_letters = []
 for l in text:
     if l in used_letters: # tab
-    print(l ,' value for the letter we know') # tab + tab
+        print(l ,' value for the letter we know') # tab + tab
+
     else: # tab
-    print(l, ' = ', text.count(l)) # tab + tab
+        print(l, ' = ', text.count(l)) # tab + tab
     used_letters.append(l) # tab + tab
 # double for
 # we want to draw chess table
@@ -40,12 +42,15 @@ for l in text:
 numbers = [1,2,3,4,5,6,7,8]
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 for n in numbers:
-for l in letters: # tab
-    print(n, l, end=' ', sep='') # tab + tab
+    for l in letters: # tab
+        print(n, l, end=' ', sep='') # tab + tab
     print() # этот принт для переноса строки он относится к первому for # tab
 
 for n in numbers:
-for l in letters: # tab
-    if n%2==0 and l in ['a', 'c', 'e', 'g']: # tab + tab
-    print(n, l, end=' ', sep='') # tab + tab + tab
+    for l in letters: # tab
+        if n%2==0 and l in ['a', 'c', 'e', 'g']: # tab + tab
+            print(n, l, end=' ', sep='') # tab + tab + tab
     print() # tab
+
+
+a = [print(i)  for i in range(0,10) if i==0]

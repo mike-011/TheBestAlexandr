@@ -8,7 +8,7 @@ print('\n','############ str in str ###########')
 print("'str' in str")     # 'str' in str
 print('"str" in str')     # "str" in str
 print('''"str" in str''') # "str" in str
-"""
+
 
 # function print has several default atributes print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
 # sep is separator beatween objects, by default is
@@ -36,7 +36,6 @@ print('09','12','2016', sep='-')
 #another example 
 print('pratik','geeksforgeeks', sep='@') 
 
-
 # ather is end, in the end of str + \n
 print('\n',"############ Line break normal ###########") 
 print('Line break normal') # Line break normal
@@ -54,7 +53,7 @@ print('Line break = "USA"', end='USA') # Line break = "USA"USA
 print('\n',"############ some game with print() ###########") 
 print('hello', 'world', 'my', 'friend', sep=' ')
 print('hello', 'world', 'my', 'friend', sep='T')
-print('hello'+'world'+'my'+'friend', sep='T')
+print('hello'+'world','my'+'friend','rr', sep='T')
 
 a = '_hello A_'
 b = '_world B_'
@@ -63,13 +62,13 @@ d = '_D_'
 e = '_E_'
 f = '_F_'
 
-
 print('\n',"############ PRINT VAR  ###########") 
 print(a,b,c,d,e,f) # print two values
 print(a+b+c+d+e+f) # add two str
 print(a or b or c or d or e or f) # show only value True
 print(a and ((b and c) and (d and e) and f)) # show you list item if before were True
 print(a*5)
+
 
 a = '_hello A_'
 b = '_world B_'
@@ -90,41 +89,60 @@ print(1+6) # any number expression
 print('\n',"############ PRINT FUNCTION  ###########") 
 def hello():
     return 'hello'
+
 print(hello())# you can put funktion in print or any ather object which has return str value, now will print hello
+
+def pause():
+    wait = input("PRESS ENTER TO CONTINUE.")
+    
 
 def world():
     text='world'
     print(text) # None
+<<<<<<< HEAD
+
+print(world()) # None <-- RECURSION <--
+"""
+
+=======
     
 print(world()) # None
+>>>>>>> b302de1a38b6dc8bf193b814d5cc4ee2f9ef4617
 
 
+print('\n',"############ FORMAT  ###########") 
 # format
-a = '{}'.format('str')
+a = '{}'.format('строка')
 
-print(a) # str
-print('{}'.format('str1')) # str1
-print('{}{}'.format('str1','str2')) # str1str2
-print('{2}{1}{0}'.format('str1','str2','str3')) # str3str2str1
-print('{0}VS{0}'.format('str1')) # str1VSstr1
-print('{hello} - {world}'.format(hello='HELLO', world="WWorld")) # HELLO - WWorld  you can add names for vars
-print('{hello[1]:} and {world}'.format(hello='Hello', world='World')) # e and World
-print('{hello!r} and {world}'.format(hello='Hello', world='World')) # 'Hello' and World
-print('{hello!s} and {world}'.format(hello='Hello', world='World')) # Hello and World
-print('! {hello:<20} and {world}'.format(hello='Hello', world='World')) # ! Hello                and World
-print('! {hello:>20} and {world}'.format(hello='Hello', world='World')) # !                Hello and World
-print('! {hello:^20} and {world}'.format(hello='Hello', world='World')) # !        Hello         and World
-print('! {hello:*^20} and {world}'.format(hello='Hello', world='World')) # ! *******Hello******** and World
+print(a)                                                   # str
+print('{}'.format('str1'),' String')                       # str1
+print('{}{}'.format('str1','str2'),' String')              # str1str2
+print('{2}{1}{0}'.format('str1','str2','str3'))            # str3str2str1
+print('{0}VS{0}'.format('str1'),'\n')                      # str1VSstr1
+
+print('{hello} - {world}'.format(hello='Привет', world="всем"))          # HELLO - WWorld  you can add names for vars
+print('{hello[1]:} and {world}'.format(hello='Привет', world='всем'))     # e and World
+print('{hello!r} and {world}'.format(hello='Привет', world='всем'))       # 'Hello' and World
+print('{hello!s} and {world}'.format(hello='Привет', world='всем'),'\n')       # Hello and World
+
+print('! {hello:<20} and {world}'.format(hello='Привет', world='всем'))   # ! Hello                and World
+print('! {hello:>20} and {world}'.format(hello='Привет', world='всем'))   # !                Hello and World
+print('! {hello:^20} and {world}'.format(hello='Привет', world='всем'))   # !        Hello         and World
+print('! {hello:*^20} and {world}'.format(hello='Привет', world='всем'))  # ! *******Hello******** and World
 
 # %
-a = '%s'%'Hello'
+a = '%s'%'Привет'
 print(a)
-print('Hello %s big %s'%('my', 'world'))
-print('Hello %d big %s'%(7, 'world'))
+print('Привет %s big %s'%('my', 'всем'))
+print('Привет %d big %s'%(7, 'всем'))
 
 spaces=20
 stars = ''
 
 for i in range(0,10,2):
     print('|{text:^{display_width}}|'.format(text=stars, display_width=spaces))
+<<<<<<< HEAD
+stars = str(i*'*')
+=======
     stars = str(i*'*')
+>>>>>>> b302de1a38b6dc8bf193b814d5cc4ee2f9ef4617
